@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Simple Calculator
 
 A lightweight, responsive calculator web app built with plain HTML, CSS, and JavaScript — no frameworks, no dependencies.
@@ -105,3 +106,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🙋 Author
 
 Made by **[Your Name]** — feel free to fork, modify, and use however you like.
+=======
+# To-Do-App
+A simple task manager built with plain HTML, CSS, and JavaScript. No frameworks, no dependencies. Add tasks, mark them as complete, and delete them.
+>>>>>>> de2c6ebebec0ea1c794fbab07c4208c206cd2db4
