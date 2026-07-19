@@ -1,12 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: url('./Images/sunset.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background: url('./Images/sunset.webp') no-repeat center center/cover;
     min-height: 100vh;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: rgb(251, 251, 250);
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0 , 0 , 0 , 0.5);
+    border: 2px solid rgba(255,255,255, 0.18);
+    backdrop-filter: blur(5px);
+}
+
+.todo-app h1 {
+    font-size: 2rem;
+}
+
+.text-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text-area input{
+    flex: 1;
+    padding: 10px 17px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-radius: 22px;
+    background-color: rgba(255, 194, 174, 0.5);
+    color:azure;
+}
+
+.text-area input::placeholder{
+    color:blanchedalmond;
+}
+
+.text-area button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: azure;
+    background-color: rgba(255, 194, 174, 0.5);
+    border: 3px solid rgba(255,255,255, 0.19);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.text-area button:hover{
+    transform: scale(1.1rem);
+    background: rgba(252, 210, 198, 0.978);
+    color: azure;
+}
+
+.todos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tasklist {
+    width: 100%;
+}
+
